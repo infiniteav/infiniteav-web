@@ -4,7 +4,7 @@ import "../styles/NavBar.css";
 const NavBar: React.FC = () => {
     return (
         <div className="NavBar">
-            <p>NavBar</p>
+            <h1>NavBar</h1>
         </div>
     );
 };
