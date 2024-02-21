@@ -1,0 +1,50 @@
+.text-page {
+    margin-top: 75px;
+    width: 100vw;
+    height: calc(100vh - 75px);
+    color: white;
+}
+
+.text-page p {
+    font-size: 2rem;
+}
+
+.model-container-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.model-container {
+    display: flex;
+    border-radius: 15px;
+    margin: 10px 0;
+    min-height: 70px;
+    width: 80vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ava-container {
+    background-color: #800020;
+}
+
+.model-image {
+    border-radius: 15px 0 0 15px;
+    object-fit: cover;
+    height: 100%;
+    width: 40%;
+    transition: transform 0.75s ease;
+}
+
+.model-image:hover {
+    transform: scale(1.1);
+}
+
+.model-details {
+    padding: 10px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
