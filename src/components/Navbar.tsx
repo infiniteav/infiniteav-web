@@ -1,12 +1,29 @@
-import React from "react";
-import "../styles/NavBar.css";
+import { Link } from 'react-router-dom';
+import { Nav, Navbar as BootstrapNavbar, NavDropdown } from 'react-bootstrap';
+import '../styles/Navbar.css';
 
-const NavBar: React.FC = () => {
+const Navbar = () => {
     return (
-        <div className="NavBar">
-            <h1>NavBar</h1>
-        </div>
+        <BootstrapNavbar
+            id="navbar"
+            expand="lg"
+            bg="dark"
+            variant="dark"
+            className="py-3 fixed-top"
+        >
+            <div className="container">
+                <Link to="/" className="navbar-brand">Infinite Films</Link>
+                <BootstrapNavbar.Toggle aria-controls="navmenu"/>
+                <BootstrapNavbar.Collapse id="navmenu">
+                    <Nav className="ms-auto"  data-bs-theme="dark">
+                        <NavDropdown title="Dropdown Menu" id="navbarDropdownMenuLink">
+                            <NavDropdown.Item as={Link} to="/404">Not Ready Yet</NavDropdown.Item>
+                        </NavDropdown>
+                    </Nav>
+                </BootstrapNavbar.Collapse>
+            </div>
+        </BootstrapNavbar>
     );
-};
+}
 
-export default NavBar;
+export default Navbar;

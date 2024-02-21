@@ -4,3 +4,31 @@
   padding: 2rem;
   text-align: center;
 }
+
+.homepage-youtube-iframe {
+  margin-top: 100px;
+  border: 1px solid red;
+  width: 80vw;
+  height: calc(80vw * 9 / 16); /* 16:9 aspect ratio */
+}
+
+.embedsocial-hashtag {
+  margin-top: -90px;
+  width: 80vw;
+  overflow: hidden;
+}
+
+.embedsocial-wrapper {
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+.feed-powered-by-es {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .embedsocial-hashtag {
+    margin-top: -125px;
+  }
+}
