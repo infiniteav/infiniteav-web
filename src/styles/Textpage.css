@@ -5,6 +5,19 @@
     color: white;
 }
 
+.model-page {
+    margin-top: 75px;
+    height: 100vw;
+    width: 100vw;
+    color: white;
+}
+
+@media (max-width: 991px) {
+    .model-page{
+        height: calc(100vh - 75px);
+    }
+}
+
 .text-page p {
     font-size: 2rem;
 }
@@ -29,11 +42,22 @@
     background-color: #800020;
 }
 
+.trinidad-container {
+    background-color: #1b3101;
+}
+
+.vana-container {
+    background-color: #010231;
+}
+
+.kasi-container {
+    background-color: #341102;
+}
+
 .model-image {
     border-radius: 15px 0 0 15px;
     object-fit: cover;
     height: 100%;
-    width: 40%;
     transition: transform 0.75s ease;
 }
 
